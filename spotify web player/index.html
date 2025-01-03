@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" type="image/x-icon" href="/assets/2111624.png">
+</head>
+
+<body>
+    <div class="container border flex">
+        <div class="left-container border flex flex-dir-col">
+            <div class="left bg-gray">
+                <div class="logo-container border flex justify-space-between">
+                    <img src="/assets/logo2.svg" class="logo invert">
+                    <img src="/assets/cross.svg" class="cross invert">
+                </div>
+                <div class="headerBtns flex flex-dir-col align-left">
+                    <div class="flex justify-center align-center">
+                        <img src="/assets/homoLogo.svg" class="homeLogo invert"><button
+                            class="homeBtn transparent">Home</button>
+                    </div>
+                    <div class="flex justify-center align-center">
+                        <img src="/assets/search.svg" class="searchLogo invert"><button class="searchBtn transparent">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="libraryBox bg-gray">
+                <div class="libHeader flex align-center">
+                    <img src="/assets/playlist.svg" class="playlistImg invert">
+                    <h3>Your Library</h3>
+                </div>
+                <div class="songsList">
+                    <ul class="flex flex-dir-col">
+                        
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>Legal</div>
+                    <div>Safety & Privacy Center</div>
+                    <div>Privacy Policy</div>
+                    <div>Cookies</div>
+                    <div>About Ads</div>
+                    <div>Accessibility</div>
+                </div>
+            </div>
+        </div>
+        <div class="right border">
+            <div class="header border flex justify-space-between align-center">
+                <div class="nav">
+                    <div class="hamburger invert"><img src="/assets/hamburger.svg"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons flex">
+                    <button class="signupBtn transparent">Sign Up</button>
+                    <button class="loginBtn">Log in</button>
+                </div>
+            </div>
+            <div class="playlists border padding-10">
+                <h2>Spotify Playlists</h2>
+                <div class="card-container border flex wrap">
+                    <div class="card flex justify-center flex-dir-col" data-folder = "Utopia">
+                        <div class="playBtnCover-container">
+                            <img src="/assets/Travis_Scott_-_Utopia.png">
+                            <button class="playBtnCover"><svg xmlns="http://www.w3.org/2000/svg" height="50" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg></button>
+                        </div>
+                        <h2>Utopia</h2>
+                        <p>Travis Scott</p>
+                    </div>
+                    <div class="card flex justify-center flex-dir-col" data-folder = "Currents">
+                        <div class="playBtnCover-container">
+                            <img src="/assets/currents.jpg">
+                            <button class="playBtnCover"><svg xmlns="http://www.w3.org/2000/svg" height="50" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg></button>
+                        </div>
+                        <h2>Currents</h2>
+                        <p>Tame Impala</p>
+                    </div>
+                    <div class="card flex justify-center flex-dir-col" data-folder = "AM">
+                        <div class="playBtnCover-container">
+                            <img src="/assets/AM.jpg">
+                            <button class="playBtnCover"><svg xmlns="http://www.w3.org/2000/svg" height="50" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg></button>
+                        </div>
+                        <h2>AM</h2>
+                        <p>Arctic Monkeys</p>
+                    </div>
+                    <div class="card flex justify-center flex-dir-col" data-folder = "OKComputer">
+                        <div class="playBtnCover-container">
+                            <img src="/assets/Radioheadokcomputer.png">
+                            <button class="playBtnCover"><svg xmlns="http://www.w3.org/2000/svg" height="50" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg></button>
+                        </div>
+                        <h2>OK Computer</h2>
+                        <p>Radiohead</p>
+                    </div>
+                    <div class="card flex justify-center flex-dir-col" data-folder = "HeroesAndVillains">
+                        <div class="playBtnCover-container">
+                            <img src="/assets/Heroes&Villains.png">
+                            <button class="playBtnCover"><svg xmlns="http://www.w3.org/2000/svg" height="50" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg></button>
+                        </div>
+                        <h2>Heroes & Villains</h2>
+                        <p>Metro Boomin</p>
+                    </div>
+                    <div class="card flex justify-center flex-dir-col" data-folder = "GNX">
+                        <div class="playBtnCover-container">
+                            <img src="/assets/GNX.png">
+                            <button class="playBtnCover"><svg xmlns="http://www.w3.org/2000/svg" height="50" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><circle fill="#01A437" cx="256" cy="256" r="256"/><path fill="#42C76E" d="M256 9.28c136.12 0 246.46 110.35 246.46 246.46 0 3.22-.08 6.42-.21 9.62C497.2 133.7 388.89 28.51 256 28.51S14.8 133.7 9.75 265.36c-.13-3.2-.21-6.4-.21-9.62C9.54 119.63 119.88 9.28 256 9.28z"/><path fill="#fff" d="M351.74 275.46c17.09-11.03 17.04-23.32 0-33.09l-133.52-97.7c-13.92-8.73-28.44-3.6-28.05 14.57l.54 191.94c1.2 19.71 12.44 25.12 29.04 16l131.99-91.72z"/></svg></button>
+                        </div>
+                        <h2>GNX</h2>
+                        <p>Kendrick Lamar</p>
+                    </div>
+                </div>
+                <div class="playbar border flex flex-dir-col">
+                    <div class="songInfo border"></div>
+                    <div class="playbarInfo-container border flex justify-center align-center">
+                        <div class="playbarBtns">
+                            <img src="assets/prevBtn.svg" class="invert prev-btn">
+                            <img src="assets/playBtn.svg" class="invert play-btn">
+                            <img src="assets/nextBtn.svg" class="invert next-btn">
+
+                            <div class="volume flex"><img src="/assets/volume.svg" class="invert">
+                                <div class="range">
+                                    <input type="range">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="songTime border"></div>
+                    <div class="seekbar-container"><div class="seekbar">
+                        <div class="circle"></div>
+                    </div></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.left{
+    width: 100%;
+    margin:auto;
+    height: 25vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-container{
+    gap: 10px;
+    width: 25vw;
+    height: 100%;
+}
+
+.right{
+    width: 75vw;
+    background: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgba(26,26,26,1) 99%);
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.logo-container .cross{
+    display: none;
+}
+
+.homeLogo,.searchLogo{
+    height: 30px;
+}
+
+.headerBtns{
+    margin-top: 25px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.homeBtn, .searchBtn{
+    border: 0;
+    height: 24px;
+    width: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.05rem;
+    margin-left: 10px;
+}
+
+.homeBtn:hover, .searchBtn:hover{
+    text-decoration: underline;
+}
+
+.libraryBox{
+    height: 73%;
+    width: 100%;
+    margin:auto;
+    border-radius: 10px;
+}
+.libHeader{
+    color: white;
+}
+.playlistImg{
+    padding: 10px;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(16, 16, 16);
+    border-radius: 10px;
+}
+
+.nav{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.hamburger{
+    display: none;
+}
+.buttons{
+    width: 150px;
+    height: 45px;
+    gap: 10px;
+}
+.buttons button{
+    width: 70px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+}
+
+.loginBtn, .signupBtn{
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.buttons .signupBtn{
+    color: rgb(216, 214, 214);
+    background-color: rgb(66, 66, 66);
+}
+
+.loginBtn:hover{
+    width: 73px;
+    height: 43px;
+}
+
+.signupBtn:hover{
+    width: 73px;
+    height: 43px;
+    color: white;
+}
+
+.playlists{
+    height: calc(100% - 50px);
+
+}
+
+.card-container{
+    margin: 25px;
+    height: calc(100% - 120px);
+    gap: 12px;
+    overflow-y : auto;
+}
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #767676;
+    border-radius: 20px;
+}
+.card{
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    border-radius: 12px;
+    position: relative;
+    transition: width 0.6s ease , background-color 0.3s ease;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.card:hover{
+    background-color: #353535;
+}
+
+.playBtnCover{
+    position: absolute;
+    right: 20px;
+    bottom: 90px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0,0,0,0);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.card:hover .playBtnCover{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.playbar{
+    position: absolute;
+    width: 80%;
+    background-color: rgb(44, 63, 44);
+    border-radius: 50px;
+    bottom: 5px;
+    left: 10%;
+    display: none;
+    visibility: hidden;
+    height: 70px;
+    transform: translateY(30px);
+    transition: transform 0.6s ease, visibility 0.6s ease, width 0.3s ease;
+}
+
+.playbarInfo-container{
+    width: 95%;
+    margin: auto;
+}
+
+.playbarBtns{
+    width: 20%;
+    gap: 17px;
+}
+
+.playbar .playbarBtns{
+    display: flex;
+    justify-content: center;
+}
+.songInfo{
+    width: auto;
+    padding-left: 5%;
+    padding-top: 5px;
+    font-size: 16px;
+    word-break: break-all;
+    font-family: sans-serif;
+}
+
+.songTime{
+    position: absolute;
+    font-size: 14px;
+    right: 40px;
+    top: 5px;
+    font-family: sans-serif;
+}
+
+.playbarBtns img{
+    cursor: pointer;
+}
+
+.libraryBox .songsList{
+    padding: 15px;
+    overflow-y: auto;
+    height: 70%;
+    background: linear-gradient(180deg, rgb(33, 33, 33) 0%, rgba(26,26,26,1) 99%);
+}
+
+.footer{
+    padding: 10px;
+    margin-top: 15px;
+    color: rgb(118, 116, 116);
+    height: 13%;
+    font-size: 11px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer div{
+    font-family: sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.footer div:hover{
+    text-decoration: underline;
+}
+
+.libraryBox .songsList ul{
+    gap: 10px;
+}
+
+.songsList ul li{
+    list-style-type: decimal;
+    border: 1px solid white;
+    border-radius: 20px;
+    gap: 20px;
+    cursor: pointer;
+    padding: 12px;    
+}
+
+.info{
+    width: 100%;
+}
+.seekbar-container{
+    padding: 10px;
+}
+.seekbar{
+    width: 60%;
+    border-radius: 10px;
+    margin: auto;
+    height: 4px;
+    margin-top: -4px;
+    background-color: rgb(154, 154, 154);
+    position: relative;
+    cursor: pointer;
+}
+
+.volume{
+    position: absolute;
+    right: 25%;
+    
+}
+
+.volume input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none; 
+    position: absolute;
+    top: 10px;
+    border-radius: 5px;
+    background-color: rgb(70, 97, 87);
+    outline: none;
+}
+
+.volume input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    width: 10px; height: 10px;
+
+}
+
+.circle{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(0, 255, 8);
+    border-radius: 100px;
+    cursor:pointer;
+    left: 0%;
+    transform: translateY(-37%);
+    transition: left 0.3s;
+}
+
+
+@media (max-width : 1100px) {
+    .left-container{
+        background-color: black;
+        position: absolute;
+        width: 80vw;
+        height: 98%;
+        left: -100%;
+        z-index: 2;
+        transition: left 1s;
+    }
+
+    .logo-container .cross{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .left, .libraryBox{
+        width: 96%;
+    }
+
+    .right{
+        width: 100vw;
+        transition: width 0.2s ease;
+    }
+
+    .card{
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media (max-width : 705px){
+    .playbar{
+        width: 100%;
+        left: 0;
+    }
+    .volume input{
+        width: 80px;
+    }   
+}
+
+@media (max-width: 500px){
+    .card-container{
+        justify-content: center;
+    }
+    .card{
+        width: 250px;
+        height: 300px;
+    }
+    
+}
